@@ -8,7 +8,7 @@ public class ObstaleCheck : MonoBehaviour {
 
 		if (other.tag == "Obstacle") {
 			Handheld.Vibrate();
-        	FindObjectOfType<LevelLoader>().LoadNextLevel();
+        	FindObjectOfType<LevelLoader>().GoToGameOver();
 		}
 	}
 }

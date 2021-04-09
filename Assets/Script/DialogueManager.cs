@@ -67,5 +67,22 @@ public class DialogueManager : MonoBehaviour {
         //Call loadlevemanager
         FindObjectOfType<LevelLoader>().LoadNextLevel();
     }
-       
+
+    public void GoToCredits()
+    {
+        // animator.SetBool("IsOpen", false);
+        FindObjectOfType<LevelLoader>().GoToCredits();
+    }
+
+    public void GoToHowToPlay()
+    {
+        // animator.SetBool("IsOpen", false);
+        FindObjectOfType<LevelLoader>().GoToHowToPlay();
+    }
+
+    public void GoToGamePlay()
+    {
+        animator.SetBool("IsOpen", false);
+        FindObjectOfType<LevelLoader>().GoToGamePlay();
+    }
 }
